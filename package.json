@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-with-react-email",
+  "version": "1.0.0",
+  "description": "Example of usage of NodeJS with React Email using tsup as a preprocessor",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "src/index.js",
+    "email:dev": "email dev -d ./src/emails",
+    "email:build": "tsup-node ./emails/src/* --format esm -d emails",
+    "email:watch": "npm run email:build -- --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "18.2.63",
+    "react-email": "2.1.0",
+    "tsup": "8.0.2",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@react-email/components": "0.0.15",
+    "react": "18.2.0"
+  }
+}
