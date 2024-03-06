@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "src/index.js",
-    "email:dev": "email dev -d ./src/emails",
+    "email:dev": "email dev -d ./emails/src",
     "email:build": "tsup-node ./emails/src/* --format esm -d emails",
     "email:watch": "npm run email:build -- --watch"
   },
