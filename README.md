@@ -5,10 +5,10 @@ on a NodeJS server that wants to use React Email for templating emails without
 having to compile the whole server. With that being said, my recommendation is to still
 use `tsup` on _the whole project_ as it is going to avoid a few caveats that this brings (i.e. `emails/src`).
 
-This means that it only compiles the emails, as **there is no other way** to use
-the React Email templates.
+This means that it only compiles the emails, as there is no other way _easy way_ to use
+the React Email templates except to have a preprocessor compiling their JSX.
 
-### Oveview of the file structure
+### Overview of the file structure
 
 ```bash
 ├── emails
@@ -24,7 +24,7 @@ the React Email templates.
 The root `src` directory is meant for your actual project files.
 The source code for the email is hosted inside `emails/src`.
 
-### Scripts that this runs
+### Scripts that this includes
 
 There are a few scripts this package contains:
 
